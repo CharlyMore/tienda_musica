@@ -1,4 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponse
+from django.contrib.auth import authenticate
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.permissions import AllowAny
 from django.contrib import messages
 from .models import Instrumento
 from .forms import InstrumentoForm, InstrumentoEditarForm
