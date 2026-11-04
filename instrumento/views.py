@@ -10,6 +10,8 @@ from django.contrib import messages
 from .models import Instrumento
 from .forms import InstrumentoForm, InstrumentoEditarForm
 
+
+
 def listar_instrumentos(request):
     busqueda = request.GET.get('buscar', '')
     categoria = request.GET.get('categoria', '')
