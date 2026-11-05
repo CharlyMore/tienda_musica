@@ -1,7 +1,12 @@
-
+# librerías de Python
 asgiref==3.12.1
+#librerías de Django
 Django==5.0.14
+#librerías de bases de datos
 mysqlclient==2.2.8
+#librerías de utilidades
 sqlparse==0.6.0
+#librerías de seguridad
 tzdata==2026.3
+#librerías de desarrollo de APIs
 djangorestframework==3.15.2
