@@ -151,6 +151,9 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-between align-items-center py-3 px-4">
+                    <a href="{% url 'detalle_instrumento' inst.id %}" class="btn btn-outline-light btn-sm rounded-pill">
+                        Ver detalle
+                    </a>
                     <a href="{% url 'editar_instrumento' inst.id %}" class="btn btn-warning btn-sm fw-bold rounded-pill">
                         <i class="fa-solid fa-pen-to-square me-1"></i>Editar
                     </a>
