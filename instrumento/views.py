@@ -1,4 +1,14 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.http import HttpResponse
+from django.contrib.auth import authenticate
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.authtoken.models import Token
+from rest_framework.authentication import TokenAuthentication
+
 from django.contrib import messages
 from django.contrib.auth import authenticate
 from rest_framework.views import APIView
@@ -10,6 +20,7 @@ from rest_framework.authentication import TokenAuthentication
 from .models import Instrumento
 from .forms import InstrumentoForm, InstrumentoEditarForm
 
+<<<<<<< HEAD
 
 def _datos_instrumento(instrumento):
     return {
@@ -23,6 +34,9 @@ def _datos_instrumento(instrumento):
         'descripcion': instrumento.descripcion,
     }
 
+=======
+from .models import tienda_musica_project
+>>>>>>> 821ec96a2b75de0aa832bad9ca727c6e35562f73
 
 def listar_instrumentos(request):
     busqueda = request.GET.get('buscar', '')
